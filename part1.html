@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="jqueryui/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui-1.12.1/jquery-ui.theme.css">
+    <style>
+       .mydiv{
+           border:4px solid blue;
+           padding:10px;
+       }
+       .border{
+           border:4px solid black;
+           padding:10px;
+           margin:10px 0;
+       }
+       .cube{
+           width:100px;
+           height:100px;
+           background-color: cyan;
+           padding:20px;
+           margin :20px;
+           display:inline-block;
+       }
+       .cube1{
+           width:100px;
+           height:100px;
+           background-color: orange;
+           padding:20px;
+           margin :20px;
+
+       }
+       #menu{
+           width:25%;
+       }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <h2>Control Widget</h2>
+        <div id="controlgroup">
+            <label for="txtStudName" class="ui-controlgroup-item">Student Name</label>
+            <input type="text" name="txtStudName" id="txtStudName" value="" class="ui-controlgroup-item"/>
+
+            <label for="slctQual" class="ui-controlgroup-item">Qualification</label>
+            <select name="slctQual" id="slctQual" class="ui-controlgroup-item">
+                <option value="u">UG</option>
+                <option value="p">PG</option>
+            </select>
+           
+            
+        </div>
+    </div>
+    <div class="mydiv">
+        <h2>Progress Bar in Jquery</h2>
+        <div id="htmlprogres">HTML</div>
+        <div id="htmlprogressbar"></div>
+        <div id="cssprogres">CSS</div>
+        <div id="cssprogressbar"></div>
+        <div id="jsprogres">JS</div>
+        <div id="jsprogressbar"></div>
+    </div>
+    <div class="border">
+        <h2>Tab Widget in JQuery UI</h2>
+        
+        <div id="tabs">
+            <ul>
+                <li><a href="#heading1">Heading 1</a></li>
+                <li><a href="#heading2">Heading 2</a></li>
+                <li><a href="#heading3">Heading 3</a></li>
+            </ul>
+            <div id="heading1">Content 1 is the content of the heading 1.</div>
+            <div id="heading2">Content 2 is the content of the heading 2.</div>
+            <div id="heading3">Content 3 is the content of the heading 3.</div>
+        </div>
+    </div>
+    <div class="mydiv">
+        <h2>Creating Sliderwidget in Jquery UI</h2>
+        <div id="slider"></div>
+    </div>
+    <div class="border">
+        <h2>Spinner Widget in Jquery Ui</h2>
+        <input type="text" value="0" id="spinner"></input>
+    </div>
+    <div class="mydiv">
+        <h2>Button Widget in Jquery Ui</h2>
+    <button id="button1">Button 1</button>
+    <input type="button" value="Button2" id="button2"></input>
+    <input type="submit" value="SUBMIT" id="button3"></input>
+    <input type="reset" value="RESET" id="button4"></input>
+    <a href="#" id="button6">Click Me</a>
+    
+    <input type="image" src="star.png" id="button5"></input>
+</div>
+    <div class="border">
+        <h2>Creating checkbox radio Widget</h2>
+        <fieldset>
+            <legend>Select Gender</legend>
+        <label for="rdbMale">Male</label>
+        <input type="radio" name="rdbGender" id="rdbMale" value="m" checked></input>
+        <label for="rdbFemale">Female</label>
+        <input type="radio" name="rdbGender" id="rdbFemale" value="f"></input>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Select Hobbies </legend>
+    <label for ="chkMusic">Music</label>
+    <input type="checkbox" name="chkHobbies" id="chkMusic" value="m"></input>
+    <label for ="chkDrawing">Drawing</label>
+    <input type="checkbox" name="chkHobbies" id="chkDrawing" value="m"></input>
+</fieldset>
+</div>
+    <div class="mydiv">
+        <h2>Menu Widget in jQuery UI</h2>
+    <ul id="menu">
+         <li>
+             <a href="#"><span class="ui-icon ui-icon-flag"></span>Home</a>
+         </li>
+         <li>
+                <a href="#">Skills</a>
+                <ul>
+                    <li>
+                        <a href="#">C</a>
+                        <ul>
+                            <li class="ui-state-disabled">
+                                <a href="#">POinters</a>
+                            </li>
+                            <li>
+                                    <a href="#">Structures</a>
+                                </li>
+                                
+                        </ul>
+                    </li>
+                    <li>
+                            <a href="#">C++</a>
+                        </li>
+                        <li>
+                                <a href="#">C#</a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                    <a href="#">About Us</a>
+                </li>
+    </ul>
+</div>
+    <div class="border">
+        <h2>Selectmenu in jQuery UI</h2>
+        <h3>Marital Status</h3>
+        <select id="selectmenu">
+            <optgroup label="status">
+            <option value="s">Single</option>
+            <option value="m" selected="selected">Married</option>
+        </optgroup>
+        <optgroup label="status problem">
+            <option value="d">Divorced</option>
+            <option value="w">Widow</option>
+            <option value="n">None</option>
+        </optgroup>
+        </select>
+    </div>
+    <div class="mydiv">
+    <h2>Welcome to Part 1</h2>
+    <button id="actionbtn">Change</button>
+    <br>
+    <br>
+    <input id="dateinput" type="text" placeholder="mm/dd/yyyy"></input>
+    </br>
+</br>
+    
+</div>
+<div class="border">
+    <h2>Welcome to Part2</h2>
+    <img src="logo.png" alt="" title="Artisian_Bakkery">
+</div>
+<div class="mydiv">
+<h2>Accordian example</h2>
+<div id="panels">
+    <h3>web learning</h3>
+    <p>today, web learning is one of the craziest development channel.it is very he craziest development channel.it is very imporatant to learn.today, ai learning is one of the craziest development channel.it is very imporatant to learn.today, ai learning is one of the craziest development channel.it is very imporatant to learn.today, ai learning is one of the craziest development channel.it is very imporatant to learn.today, ai learning is one of the craziest development channel.it is very imporatant to learn.</p>
+
+    <h3>machine learning</h3>
+    <p>today, machine learning is one of the craziest development channel.it is very imporatant to learn.</p>
+
+    <h3>ai learning</h3>
+    <p>today, ai learning is one of the craziest development channel.it is very imporatant to learn.</p>
+</div>
+</div>
+<div class="border">
+<h2>Message box in jquery UI</h2>
+<div id="firstdiv">
+    <h3>Hello welcome to web development</h3>
+    <br>
+    <button id="btn1">Click to show message box</button>
+</div>
+
+<br>
+<div id="messagebox" title="Messagebox" class="mydivs">
+    <h3>This is just a dummy title</h3>
+    <img src="logo.png" alt="" width="200px">
+    <br>
+    <button>Click me</button>
+</div>
+</div>
+<div class="mydiv">
+<h2>Autocomplete widget in jquery ui</h2>
+<div id="mydivss">
+    <label><b>Enter your favourite city</b></label>
+    <input type="text" name="" id="citytextbox">
+</div>
+</div>
+<div class="border">
+<h2>Draggable feature in jQuery UI</h2>
+<div>
+    <div class="cube1">
+        <h3>CUBE 1</h3>
+    </div>
+    <div class="cube1">
+        <h3>CUBE 2</h3>
+    </div>
+</div>
+</div>
+<div class="mydiv">
+<h2>Sortable feature in jQuery UI</h2>
+<div id="sorting">
+    <div class="cube">
+        <h3>CUBE 1</h3>
+    </div>
+    <div class="cube">
+        <h3>CUBE 2</h3>
+    </div>
+    <div class="cube">
+        <h3>CUBE 3</h3>
+    </div>
+    <img src="logo.png" alt="" width="200px">
+</div>
+</div>
+<div class="border">
+<h2>Resizable in jQuery UI</h2>
+<div id="myydivs">
+    <img id="resize" src="logo.png" alt="" > 
+</div>
+</div>
+<div class="mydiv">
+    <h2>Theming theme Roller Customizationx</h2>
+</div>
+<h2>Selectmenu in JQueryUI</h2>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  
+ <script src="jqueryui/jquery-ui-1.12.1/jquery-ui.js" type="text/javascript"></script>
+     
+  <script>
+      //jquery for datepicker widget
+    $("#dateinput").datepicker({
+        numberOfMonths:1,
+        changeYear:true,
+        changeMonth:true,
+        showWeek:true,
+        weekHeader:"wk no",
+        showOtherMonths:true,
+        minDate :new Date(2017,0,5),
+        maxDate :new Date(2020,0,5) 
+
+    });
+    $("#actionbtn").click(function(){
+        //getter method
+        var height=$("#messagebox").dialog("option","height");
+        alert(height);
+        //setter method
+        $("#messagebox").dialog("option","draggable",false);
+        $("#dateinput").datepicker("option","numberOfMonths",2);
+    });
+
+    //jquery for tooltip widget
+    $("img").tooltip({
+       // track:true,
+       // content:"Bakkery",
+       show:{effect:"bounce",duration:3000},
+       hide:{effect:"explode",duration:3000}
+
+       
+    });
+
+    //jquery for accordian widget
+    $("#panels").accordion({
+        collapsible:true,
+        //event:"mouseover",
+        animate:1000,
+       // active:1,
+       heightStyle:true,
+       icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"},
+    });
+    
+    //jquery for dialogbox widget
+    $("#btn1").click(function(){
+       $("#messagebox").dialog({
+           title:"Custom message box ",
+           draggable:true,
+           resizable:true,
+           height:300,
+           width:300,
+           modal:true,
+           buttons:[
+               {
+                   text: "Close",
+                   icon:"ui-icon-heart",
+                   click: function(){
+                       $(this).dialog("close");
+                   }
+               },
+               {
+                   text:"Ok",
+                   icon:"ui-icon-heart",
+                   click: function(){
+                       $(this).dialog("close");
+                   }
+               }
+           ]
+       });
+    });
+
+    //jquery for autocomplete widget
+    var mycities=["mumbai","hisar","sirsa","up","madhya pradesh","jind","karnatka","kerala","narnol","punjab","haryana"];
+    $("#citytextbox").autocomplete({
+        source: mycities
+    },
+    {
+        autoFocus:true,
+        delay:1000,
+        minLength:2,
+    });
+
+    //jquery for draggable property
+    $(".cube1").draggable({
+       // axis:"y",
+       containment:"parent",
+       //containment:"document",
+       cursor:"grabbing",
+       opacity:0.5,
+       //grid:[300,300],
+       snap:true,
+       snapTolerance:30
+    });
+
+
+//jquery for sortable property
+    $("#sorting").sortable({
+        containment:"parent",
+       distance:50,
+       cursor:"grabbing",
+       opacity:0.5,
+      // delay:300,
+       //axis:"x"
+    });
+    //jquery for resizable property
+    $("#resize").resizable({
+        maxWidth:500,
+        maxHeight:500,
+        autoHide:true,
+        //distance:200,
+        ghost:true,
+        aspectRatio:true,
+    });
+
+    //jquery for selectmenu widget
+    $("#selectmenu").selectmenu({
+        icons:{button:"ui-icon-circle-arrow-s"},
+        width:300,
+        select:function(event,ui){
+            alert("Label = "+ ui.item.label +" "+"Value = "+ui.item.value );
+
+        }
+    });
+    //jquery for menu widget
+    $("#menu").menu({
+        icons:{submenu : "ui-icon-circle-arrow-e"},
+       // disabled:true,
+       select:function(event,ui){
+           alert(ui.item.text());
+       }
+    });
+    $("#menu a").css({"display":"block","textAlign":"center","textDecoration":"none"});
+
+    //jquery for radibutton widget
+    $("input[type=radio]").checkboxradio();
+
+    //jquery for checkbutton widget
+    $("input[type=checkbox]").checkboxradio();
+
+//jquery for button widget
+    $("#button1").button();
+    $("#button2").button();
+    $("#button3").button();
+    $("#button4").button();
+    $("#button5").button();
+    $("#button6").button();
+
+//jquery for spinner widget
+    $("#spinner").spinner()
+
+//jquery for slider widget
+    $("#slider").slider();
+
+//jquery for tab widget
+    $("#tabs").tabs();
+
+//jqiery ui for progressbar
+    $("#htmlprogressbar").progressbar({value:80});
+    $("#cssprogressbar").progressbar({value:60});
+    $("#jsprogressbar").progressbar({value:40});
+
+    //jquery ui for control group
+    $("#controlgroup").controlgroup({
+        direction:"vertical"
+    });
+  </script>
+
+</html>
